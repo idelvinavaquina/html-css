@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+header {
+    background-color: #2FAB66;
+    color: white;
+    text-align: center;
+    width: 620px;
+    margin: auto;
+}
+
+h1#principal {
+    font-family: Bebas Neue, cursive;
+}
+
+body {
+    background-image: linear-gradient(to right, #3DDC84, #83E1AD);
+}
+
+main {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-indent: 15px;
+    line-height: 1.2em;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1.historia {
+    font-family: 'Bebas Neue', cursive;
+    src: url(fontes/idroid.otf);
+    color: #063D1E;
+    background-color: #c5ebd65e;
+}
+
+h2 {
+    font-family: 'Android', sans-serif;
+    color: #063D1E;
+    background-color: #c5ebd65e;
+}
+
+ul {
+    list-style-type: '2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}

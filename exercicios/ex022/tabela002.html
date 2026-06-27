@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body  {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        /*
+        Para o efeito zembrado podemos usar também: 
+            #tbody > tr: nth-chils(odd) --> para colunas impares
+            #tbody > tr: nth-chils(even) --> para colunas pares
+        */
+        tbody > tr:nth-child(2n) {
+            background-color: rgba(211, 211, 211, 0.76);
+        }
+        td.null {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES 
+        TABBLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="null">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="null">21 056 745</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="null">17 243 899</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="null">11 489 988</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="null">14 412 932</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="null">11 377980</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="null">9 526 721</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="null">9 219 243</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="null">8 602 393</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="null">7 104 190</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="null">7 075 709</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td class="null">7 108 390</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="null">4 141 501</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="null">4 018 910</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="null">3 560 820</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="null">3 604 568</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="null">3 209 789</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="null">3 207 614</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="null">3 025 763</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="null">2 117 172</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes </th>
+                <td class="null"><strong>178 064 376</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
